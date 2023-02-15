@@ -51,7 +51,7 @@ export default {
         }
         const len = value.toString().length;
         const [min, max] = params;
-        return len > min && len < max;
+        return len >= min && len <= max;
     },
     
     dimensions: ({ value, params }) => {
